@@ -1,0 +1,10 @@
+basic.showIcon(IconNames.Heart)
+basic.pause(1000)
+basic.showIcon(IconNames.SmallHeart)
+basic.pause(1000)
+basic.forever(function () {
+    music.rest(music.beat(BeatFraction.Double))
+    basic.pause(1000)
+    music.rest(music.beat(BeatFraction.Double))
+    basic.pause(1000)
+})
